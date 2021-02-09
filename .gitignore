@@ -22,7 +22,8 @@ build/
 .env.test/.local
 .env.production.local
 
-.slintcashe
+.eslintcashe
+debug.log
 
 npm-debut.log*
 yarn-debug.log*
