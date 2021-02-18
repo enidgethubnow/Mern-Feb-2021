@@ -8,9 +8,9 @@ class PersonCard extends Component {
         <h2>
           {lastName} {firstName}
         </h2>
-        <p>Enid {firstName}, Peterson{lastName}</p> 
+        
         <p>Age: {age} </p>
-        <p>hairColor Color: {hairColor} </p><br></br>
+        <p>Hair Color: {hairColor} </p><br></br>
 
         
       </div>
