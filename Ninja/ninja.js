@@ -28,5 +28,5 @@ class Ninja {
   const Enid = new Ninja("Enid Peterson", 50);
   Enid.showStats();
   Enid.drinkSake();
-  
+  Enid.sayName();
 
