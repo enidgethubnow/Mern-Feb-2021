@@ -20,24 +20,24 @@ const Form =(props)=> {
             <label htmlFor = "firstName">First Name</label>
             <input onChange = {onChange} type ="text" name= "firstName" onChange={onChange} 
             />
-            {props.firstName < 1 ? (
-          <span className="text-danger small">First Name cannot be blank.</span>
+            {props.firstName < 2 ? (
+          <span className="text-danger small">Field must be at least 2 characters..</span>
         ) : null}
 
 
         <div className =" form-group">  
             <label htmlFor = "lastName">Last Name</label>
             <input onChange = {onChange} type ="text" name= "lastName"onChange={onChange}/>
-            {props.lastName < 1 ? (
-          <span className="text-danger small">First Name cannot be blank.</span>
+            {props.lastName < 2 ? (
+          <span className="text-danger small">Field must be at least 2 characters..</span>
         ) : null}
         </div>
 
 
             <label htmlFor = "email">Email</label>
             <input onChange = {onChange} type ="text" name= "email" onChange={onChange}/>
-            {props.email < 1 ? (
-          <span className="text-danger small">Email address is invalid.</span>
+            {props.email < 5 ? (
+          <span className="text-danger small">field must be at lease 5 characters.</span>
         ) : null}  
         </div>
 
