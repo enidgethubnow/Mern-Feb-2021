@@ -1,8 +1,16 @@
 .App {
   text-align: center;
-  
+  background-color: rgb(229, 224, 235);
 }
-
+form-group{
+  background-color: blueviolet;
+}
+label{
+  color: rgb(107, 43, 226);
+}
+input{
+  color: rgb(226, 43, 134);
+}
 h1{
   font-style: italic;
   font-size: 33px;

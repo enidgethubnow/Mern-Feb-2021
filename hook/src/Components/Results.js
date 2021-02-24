@@ -5,13 +5,14 @@ const Results =(props)=>{
     const {firstName, lastName, email, password, confirmPassword} = props.data;
     return(
         <div>
-            <h1>Results</h1>
+            <h1 style={{color: "blue"}}>Results</h1>
             
-            <p>First Name: {firstName}</p>
+            <p style={{color: "green"}}>First Name: {firstName}</p>
             <p>Last Name: {lastName}</p>
-            <p>Email: {email}</p>
-            <p>Password: {password}</p>
-            <p>Confirm Password: {confirmPassword}</p>
+            <p >Email: {email}</p>
+            <p style={{color: "green"}}>Password: {password}</p>
+            <p style={{color: "red"}}>Confirm Password: {confirmPassword}</p>
+            
         </div>
     )
     }
