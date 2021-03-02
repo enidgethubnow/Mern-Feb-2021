@@ -17,6 +17,7 @@ const [state, setState] = useState ({
   return (
     <div className="App">
       <Form inputs= {state} setInputs ={setState}/>
+      <hr className ="hr" ></hr>
       <Results data ={state}/>
      
       
