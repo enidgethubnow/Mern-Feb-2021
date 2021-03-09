@@ -50,9 +50,7 @@ app.post("/api/dogs", (req,res) =>{
         res.json(newDog);
     })
     .catch((err) => res.json(err));
-})
-
-
+});
 
 
 
