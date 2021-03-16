@@ -1598,9 +1598,9 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^7.28.1"
 
-"@testing-library/user-event@^12.1.10":
+"@testing-library/Joke-event@^12.1.10":
   "integrity" "sha512-COfCkYgcxc+P9+pEAIGlmBuIDjO91Chf9GOBHI8AhIiMyaoOrKVPQny1uf0HIAYNoHKL5slhkqOPP2ZyNaVQGw=="
-  "resolved" "https://registry.npmjs.org/@testing-library/user-event/-/user-event-12.7.1.tgz"
+  "resolved" "https://registry.npmjs.org/@testing-library/Joke-event/-/Joke-event-12.7.1.tgz"
   "version" "12.7.1"
   dependencies:
     "@babel/runtime" "^7.12.5"

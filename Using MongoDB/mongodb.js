@@ -1,5 +1,5 @@
 Last login: Fri Mar 12 01:30:08 on ttys000
-Enid-MBP:~ user$ mongo
+Enid-MBP:~ Joke$ mongo
 MongoDB shell version v4.2.0
 connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
 Implicit session: session { "id" : UUID("58f4586b-cdfc-4bbe-aa44-bd000b997b0a") }
