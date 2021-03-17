@@ -1,5 +1,6 @@
 const Person = require('../models/person.model');    
 module.exports.index = (request, response) => {
+    console.log("index person.controller")
     response.json({
         message: "Hello World"
     });

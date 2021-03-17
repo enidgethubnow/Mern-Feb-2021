@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const app = express();
+const cors = require( 'cors');
+
 
 require('./config/mongoose.config');               /* This is new */
 app.use(cors());
