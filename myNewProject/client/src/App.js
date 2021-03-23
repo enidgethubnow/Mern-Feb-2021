@@ -1,12 +1,19 @@
 import React from 'react';
-// import Main from '../views/Main';
+
+import Detail from './components/Detail';
+import PersonForm from './components/PersonForm';
 import './App.css';
+import ProductList from './components/ProductList';
+
+
 
 function App() {
   return (
     <div className="App">
+      <Detail />
        
-       {/* <Main /> */}
+       <PersonForm />
+       <ProductList />
      
 
     </div>

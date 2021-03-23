@@ -10,7 +10,7 @@ const PersonForm = () => {
         //prevent default behavior of the submit
         e.preventDefault();
         //make a post request to create a new person
-        axios.post('http://localhost:8000/api/people', {
+        axios.post('http://localhost:8000/api/detail', {
             firstName,    // this is shortcut syntax for firstName: firstName,
             lastName ,     // this is shortcut syntax for lastName: lastName
             
@@ -35,8 +35,10 @@ const PersonForm = () => {
             </p>
             <br></br>
             
-            <button>Create</button>
+            <button onClick = {(e)=> onSubmitHandler(e.value)}>{ }Create</button>
         </form>
+     
     )
 }
+<hr />
 export default PersonForm;
