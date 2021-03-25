@@ -1,29 +1,28 @@
-/* eslint-disable react/jsx-no-undef */
+import React from 'react';
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
- import {Link} from '@react/router';
-
-// import axios from 'axios';
-const ProductList = (props) => {
-    const [products, setProducts] =useState([]);
-        useEffect(()=> {
-            axios.get("http://localhose:8000/api/Products")
-            .then((res) =>{
-                console.log(res.data);
-                setProducts(res.data);
+import { Link } from '@reach/router';
+const PersonList = (props) => {
+    const { removeFromDom } = props;
+    const deletePerson = (personId) => {
+        axios.delete('http://localhost:8000/api/people/' + personId)
+            .then(res => {
+                removeFromDom(personId)
             })
-            .catch((err) =>
-            console.log(err));
-            
-        },[]);
+    }
     return (
         <div>
-        <div>All Products</div>
-            {products.map((products, index)=>(
-                <p>
-                <Link to = {`/api/detail/{products.id}`}>{products.title}</Link></p>
-            ))};
+            {props.people.map((person, idx) => {
+                return <p key={idx}>
+                    <Link to={"/people/" + person._id}>
+                        {person.lastName}, {person.firstName}
+                    </Link>
+                    |
+                    <button onClick={(e)=>{deletePerson(person._id)}}>
+                        Delete
+                    </button>
+                </p>
+            })}
         </div>
     )
 }
-export default ProductList;
+export default PersonList;

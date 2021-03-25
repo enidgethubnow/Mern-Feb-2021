@@ -16,3 +16,9 @@ module.exports.createPerson = (request, response) => {
         .then(person => response.json(person))
         .catch(err => response.json(err));
 }
+
+module.exports.deletePerson = (request, response) => {
+    Person.deleteOne({ _id: request.params.id })
+        .then(deleteConfirmation => response.json(deleteConfirmation))
+        .catch(err => response.json(err))
+}
