@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-undef */
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-//  import {Link} from '@react/router';
+ import {Link} from '@react/router';
 
 // import axios from 'axios';
 const ProductList = (props) => {

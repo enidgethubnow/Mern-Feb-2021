@@ -1,20 +1,20 @@
-import React from 'react';
 
+import {Router} from '@reach/router';
 import Detail from './components/Detail';
-import PersonForm from './components/PersonForm';
 import './App.css';
-import ProductList from './components/ProductList';
+import ProductList from './view/ProductList';
 
 
 
 function App() {
   return (
     <div className="App">
+    <Router>
       <Detail />
-       
-       <PersonForm />
-       <ProductList />
-     
+       <Detail path ="details/id" />
+       {/* <PersonForm  path ="/"/> */}
+       <ProductList path ="/" />
+       </Router>
 
     </div>
   );
