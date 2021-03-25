@@ -1,6 +1,9 @@
 const PersonController = require('../controllers/person.controller');
-module.exports = function(app){
-    app.get('/api', PersonController.index);
-    app.post('/api/people', PersonController.createPerson);
 
+module.exports =(app) =>{
+    app.get('/api/person/',PersonController.getAll)
+    app.post('/api/person/new', PersonController.create);
+    app.get('/api/person/:id', PersonController.getOne);
+    app.put('/api/person/:id', PersonController.update);
+    app.delete('/api/person/:id', PersonController.delete);
 }

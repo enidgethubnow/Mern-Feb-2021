@@ -11,10 +11,11 @@ function App() {
     <div className="App">
     <Router>
       <Detail />
-       <Detail path ="details/id" />
-       {/* <PersonForm  path ="/"/> */}
+       <Detail path ="/api/person/:id" />
+       <PersonForm  path ="/"/> */}
        <ProductList path ="/" />
        </Router>
+       
 
     </div>
   );

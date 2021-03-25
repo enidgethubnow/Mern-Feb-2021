@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+import { Link } from '@reach/router';
 // import {Link} from '@reach/router';
 const Detail = (props) => {
     const [detail, setDetail] = useState({});
@@ -19,7 +20,8 @@ const Detail = (props) => {
             <p>Price: {detail.price}</p>
             <p>Description: {detail.description}</p>
             
-
+            <button onClick>delete</button>
+            <Link to = "/api/person/">Main View</Link>
         </div>
     )
 
